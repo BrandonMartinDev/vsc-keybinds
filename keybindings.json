@@ -1,0 +1,113 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "shift+alt+f",
+        "command": "-filesExplorer.findInFolder",
+        "when": "explorerResourceIsFolder && filesExplorerFocus && foldersViewVisible && !inputFocus"
+    },
+    {
+        "key": "shift+alt+f",
+        "command": "-search.action.restrictSearchToFolder",
+        "when": "folderMatchWithResourceFocus && searchViewletVisible"
+    },
+    {
+        "key": "shift+alt+f",
+        "command": "editor.action.formatDocument",
+        "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+    },
+    {
+        "key": "ctrl+shift+i",
+        "command": "-editor.action.formatDocument",
+        "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+    },
+    {
+        "key": "shift+alt+f",
+        "command": "editor.action.formatDocument.none",
+        "when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+i",
+        "command": "-editor.action.formatDocument.none",
+        "when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+down",
+        "command": "editor.action.copyLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+alt+down",
+        "command": "-editor.action.copyLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+up",
+        "command": "editor.action.copyLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+alt+up",
+        "command": "-editor.action.copyLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+down",
+        "command": "expandLineSelection",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "-expandLineSelection",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+shift+down",
+        "command": "cursorColumnSelectDown",
+        "when": "editorColumnSelection && textInputFocus"
+    },
+    {
+        "key": "shift+down",
+        "command": "-cursorColumnSelectDown",
+        "when": "editorColumnSelection && textInputFocus"
+    },
+    {
+        "key": "ctrl+shift+up",
+        "command": "cursorColumnSelectUp",
+        "when": "editorColumnSelection && textInputFocus"
+    },
+    {
+        "key": "shift+up",
+        "command": "-cursorColumnSelectUp",
+        "when": "editorColumnSelection && textInputFocus"
+    },
+    {
+        "key": "ctrl+alt+up",
+        "command": "editor.action.insertCursorAbove",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+up",
+        "command": "-editor.action.insertCursorAbove",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+up",
+        "command": "cursorUpSelect",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "shift+up",
+        "command": "-cursorUpSelect",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+shift+up",
+        "command": "list.expandSelectionUp",
+        "when": "listFocus && listSupportsMultiselect && !inputFocus && !treestickyScrollFocused"
+    },
+    {
+        "key": "shift+up",
+        "command": "-list.expandSelectionUp",
+        "when": "listFocus && listSupportsMultiselect && !inputFocus && !treestickyScrollFocused"
+    }
+]
